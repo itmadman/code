@@ -2,12 +2,6 @@
 
 Class controller{
 
-	/*protected function render($str){
-
-		echo '成功啦';
-
-	}*/
-
 	const CONTROLLER_NAME = 'site';
 
 
@@ -58,8 +52,6 @@ Class controller{
 
 	public function __construct($template_dir="./view",$compile_dir="./runtime/template_c")
 
-
-
 	{
 
 
@@ -77,8 +69,6 @@ Class controller{
 
 
 	$this->action_name = $this->getControllerName(true);
-
-
 
 	}
 
@@ -108,10 +98,7 @@ Class controller{
 
 	/*public function render($tpl_var,$value=null){
 
-
-
 	$this->arr_var[$tpl_var]=$value;
-
 
 
 	}*/
@@ -291,8 +278,6 @@ function Model($model_name){
 	return  new $class_name();
 
 }
-
-
 
 function dump($arr){
 
