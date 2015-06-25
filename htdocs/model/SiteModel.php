@@ -1,0 +1,1 @@
+<?phpClass SiteModel{	public function getInfo(){		$arr=D('m_api')->select('email,token,mloginip,memail')->leftjoin('m_member','m_api.uid=m_member.mid')->order('mid')->limit(1,3)->all();		return $arr;	}}
